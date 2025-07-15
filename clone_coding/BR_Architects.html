@@ -28,14 +28,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 40px;
+        padding-left: 35px;
         letter-spacing: 4px;
       }
 
       /* 직계가 아니기 때문에 > 사용 불가능
       대신 이렇게 쓰면 logo태그 내 모든 후손a 선택 */
       .logo a {
-        font-weight: 540;
+        font-weight: 400;
         text-decoration: none;
         color: black;
       }
@@ -45,7 +45,7 @@
         justify-content: space-around;
         align-items: center;
         box-sizing: border-box;
-        padding-right: 30px;
+        padding-right: 15px;
       }
 
       .menu_item:hover {
@@ -54,7 +54,7 @@
 
       .menu_item {
         letter-spacing: 4px;
-        font-weight: 520;
+        font-weight: 380;
         padding: 8px 16px;
       }
 
@@ -132,8 +132,8 @@
 
       #project_text_container > h3 {
         width: 1500px;
-        font-size: 24px;
-        font-weight: 450;
+        font-size: 22px;
+        font-weight: 400;
         padding-bottom: 20px;
         border-bottom: 1px solid rgb(240, 240, 240);
       }
@@ -182,8 +182,8 @@
       #about_head {
         padding-top: 45px;
         width: 1500px;
-        font-size: 24px;
-        font-weight: 450;
+        font-size: 22px;
+        font-weight: 400;
         padding-bottom: 20px;
         border-bottom: 1px solid rgb(240, 240, 240);
         margin-bottom: 0;
@@ -251,8 +251,8 @@
 
       #contact_message_section > h3 {
         width: 1500px;
-        font-size: 24px;
-        font-weight: 450;
+        font-size: 22px;
+        font-weight: 400;
         padding-bottom: 20px;
         border-bottom: 1px solid rgb(240, 240, 240);
         margin-bottom: 0;
@@ -260,6 +260,7 @@
 
       #contact_message_section > p {
         width: 1500px;
+        margin-bottom: 10px;
       }
 
       #input_form {
@@ -267,12 +268,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 16px;
+        gap: 8px;
       }
 
       #input_form input {
-        width: 1500px;
+        width: 1491px;
         height: 35px;
+        font-size: 15px;
 
         border: 1px solid lightgray;
       }
@@ -287,8 +289,11 @@
         height: 38px;
         border: none;
         background-color: black;
+        font-size: 15px;
         color: white;
+        margin-top: 20px;
         margin-left: 12px;
+        margin-bottom: 50px;
       }
 
       #last_img_container {
@@ -330,7 +335,8 @@
           <img
             class="main_img"
             src="https://www.w3schools.com/w3images/architect.jpg"
-            alt="" />
+            alt=""
+          />
           <div class="main_text">
             <h1><b>BR</b> <span>Architects</span></h1>
           </div>
@@ -462,7 +468,9 @@
             id="name"
             name="name"
             placeholder="Name"
-            required />
+            style="padding-left: 9px"
+            required
+          />
 
           <label for="email"></label>
           <input
@@ -470,7 +478,9 @@
             id="email"
             name="email"
             placeholder="Email"
-            required />
+            style="padding-left: 9px"
+            required
+          />
 
           <label for="subject"></label>
           <input
@@ -478,7 +488,9 @@
             id="subject"
             name="subject"
             placeholder="Subject"
-            required />
+            style="padding-left: 9px"
+            required
+          />
 
           <label for="comment"></label>
           <input
@@ -486,7 +498,9 @@
             id="comment"
             name="comment"
             placeholder="Comment"
-            required />
+            style="padding-left: 9px"
+            required
+          />
           <button type="submit">SEND MESSAGE</button>
         </form>
       </div>
